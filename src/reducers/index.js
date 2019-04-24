@@ -10,7 +10,7 @@ export default (state = defaultState, action) => {
             id: info.id,
             name: info.name,
             displayName: capitalise(info.name),
-            forks: info.forks,
+            forks: info.forks_count,
             createdDate: info.created_at,
             language: info.language,
           }

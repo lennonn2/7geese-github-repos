@@ -8,7 +8,7 @@ describe('reducers', () => {
       name: 'my-test-repo',
       language: 'Javascript',
       created_at: '2016-12-28T23:12:13Z',
-      forks: 3
+      forks_count: 3
     }]
   };
 
@@ -42,13 +42,13 @@ describe('reducers', () => {
         name: 'my-test-repo',
         language: 'Javascript',
         created_at: '2016-12-28T23:12:13Z',
-        forks: 1
+        forks_count: 1
       }, {
         id: '12355',
         name: 'my-other-test-repo',
         language: 'Ruby',
         created_at: '2018-12-28T23:12:13Z',
-        forks: 3
+        forks_count: 3
       }]
     }
 

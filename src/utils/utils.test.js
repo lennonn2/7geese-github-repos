@@ -23,8 +23,8 @@ describe('utils test', () => {
   });
 
   it('should not capitalise "as" or "on"', () => {
-    const testRepoName = 'test-as-on-repo';
-    expect(capitalise(testRepoName)).toEqual('Test as on Repo');
+    const testRepoName = 'this-is-a-test-on-javascript';
+    expect(capitalise(testRepoName)).toEqual('This Is A Test on Javascript');
   });
 
   it('should work on single word repos', () => {
