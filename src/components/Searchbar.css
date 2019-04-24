@@ -1,0 +1,19 @@
+.search {
+  display: flex;
+  height: 30px;
+  justify-content: flex-start;
+  padding: 5px;
+  align-items: center;
+}
+
+.searchInput {
+  height: 25px;
+  flex-basis: 400px;
+  border: 1px solid black;
+  padding: 1px 5px;
+}
+
+.searchText {
+  height: 25px;
+  padding-right: 10px;
+}

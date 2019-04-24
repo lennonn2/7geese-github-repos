@@ -5,7 +5,9 @@
 - add reducer
 - add action to populate store
 - transform data before populating
+- COMMIT
 - display list
 - add basic styling
 - add searchbar component
 - add search functionailty
+- COMMIT

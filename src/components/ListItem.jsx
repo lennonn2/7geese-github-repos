@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './ListItem.css'
 
@@ -12,6 +13,13 @@ const ListItem = ({displayName, createdDate, forks, language}) => {
       <div><strong>Language:</strong> {displayLanguage}</div>
     </div>
   )
+}
+
+ListItem.propTypes = {
+  displayLanguage: PropTypes.string,
+  displayName: PropTypes.string,
+  language: PropTypes.string,
+  forks: PropTypes.number,
 }
 
 export default ListItem;
