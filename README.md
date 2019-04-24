@@ -6,3 +6,6 @@
 - add action to populate store
 - transform data before populating
 - display list
+- add basic styling
+- add searchbar component
+- add search functionailty

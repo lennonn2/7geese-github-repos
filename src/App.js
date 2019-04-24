@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import { fetchRepos } from './utils';
 import { addRepos } from './actions';
+import List from './components/List';
+import Searchbar from './components/Searchbar';
 
 import './App.css';
 
@@ -17,7 +19,8 @@ class App extends Component {
     return (
       <Provider store={this.props.store}>
         <div className="App">
-          
+          <Searchbar />
+          <List />
         </div>
       </Provider>
     )
