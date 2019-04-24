@@ -2,12 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import { updateSearch } from '../actions';
 import './Searchbar.css';
 
 const mapDispatchToProps = (dispatch) => {
   return {
     updateSearch: (ev) => {
-      dispatch({ type: 'UPDATE_SEARCH', query: ev.target.value})
+      dispatch(updateSearch(ev.target.value))
     }
   }
 }

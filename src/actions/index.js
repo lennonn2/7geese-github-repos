@@ -4,3 +4,10 @@ export const addRepos = repos => {
     repos
   }
 }
+
+export const updateSearch = query => {
+  return {
+    type: 'UPDATE_SEARCH',
+    query
+  }
+}

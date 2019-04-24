@@ -1,6 +1,7 @@
 import { capitalise } from "../utils";
+import defaultState from '../defaultState';
 
-export default (state, action) => {
+export default (state = defaultState, action) => {
   switch(action.type) {
     case 'ADD_REPOS': 
       const repos = action.repos
