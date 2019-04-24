@@ -12,7 +12,9 @@ import './App.css';
 class App extends Component {
   async componentDidMount() {
     const repos = await fetchRepos();
-    this.props.store.dispatch(addRepos(repos));
+    if (Array.isArray(repos)) {
+      this.props.store.dispatch(addRepos(repos));
+    }
   }
 
   render() {

@@ -1,10 +1,14 @@
 import Fuse from 'fuse.js';
 
 export const fetchRepos = async () => {
-  const response = await fetch('https://api.github.com/users/unbounce/repos');
-  const json = await response.json();
+  try {
+    const response = await fetch('https://api.github.com/users/7Geese/repos');
+    const json = await response.json();
+    return json;
+  } catch (err) {
+    throw err;
+  }
 
-  return json;
 }
 
 const doNotCapitalise = new Set(['on', 'as'])
@@ -24,4 +28,11 @@ export const getVisibleRepos = (repos, query) => {
   };
   const fuse = new Fuse(repos, options);
   return fuse.search(query);
+}
+
+const twoDigits = (num) => num < 10 ? `0${num}` : num;
+
+export const formatDate = (dateStr) => {
+  const d = new Date(dateStr);
+  return `${d.getFullYear()}-${twoDigits(d.getMonth())}-${twoDigits(d.getDate())} ${twoDigits(d.getHours())}:${twoDigits(d.getMinutes())}`
 }

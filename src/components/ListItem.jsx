@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { formatDate } from '../utils';
 import './ListItem.css'
 
 const ListItem = ({displayName, createdDate, forks, language}) => {
@@ -8,7 +9,7 @@ const ListItem = ({displayName, createdDate, forks, language}) => {
   return (
     <div className='listItem'>
       <div><strong>Repo name:</strong> {displayName}</div>
-      <div><strong>Created At:</strong> {createdDate}</div>
+      <div><strong>Created:</strong> {formatDate(createdDate)}</div>
       <div><strong>Forks:</strong> {forks}</div>
       <div><strong>Language:</strong> {displayLanguage}</div>
     </div>

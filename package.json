@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "3.0.0",
-    "redux-mock-store": "^1.5.3"
+    "react-scripts": "3.0.0"
   },
   "dependencies": {
     "fuse.js": "^3.4.4",
